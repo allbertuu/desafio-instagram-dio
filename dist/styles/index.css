@@ -1,0 +1,196 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+@media (min-width: 640px) {
+  body {
+    background-color: rgb(243, 243, 243);
+  }
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #0095f6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  max-width: fit-content;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #0095f6;
+  color: white;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #23a3f8;
+}
+button:active {
+  background-color: #007acc;
+}
+
+.container {
+  width: 100%;
+  padding: 3rem;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+.rounded, button {
+  border-radius: 0.25rem; /* 4px */
+}
+
+.rounded-md, .instagram-login .quick-start,
+.instagram-login .accounts {
+  border-radius: 0.375rem; /* 6px */
+}
+
+.rounded-full, .instagram-login .quick-start :nth-child(2) {
+  border-radius: 100%;
+}
+
+.mx-auto, .instagram-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.instagram-wrapper {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+  .instagram-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.instagram-phone {
+  width: 110%;
+}
+@media (min-width: 1024px) {
+  .instagram-phone {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
+.instagram-phone > img {
+  filter: drop-shadow(0 0 0.4rem #a3716e);
+  max-height: 660px;
+}
+@media (max-width: 639px) {
+  .instagram-phone {
+    display: none;
+  }
+}
+
+.instagram-login {
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 640px) {
+  .instagram-login {
+    gap: 1rem;
+  }
+}
+@media (min-width: 640px) {
+  .instagram-login .quick-start,
+.instagram-login .accounts {
+    border: 1px solid lightgray;
+    background-color: white;
+  }
+}
+.instagram-login .quick-start {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+.instagram-login .quick-start :first-child {
+  width: 200px;
+}
+@media (min-width: 640px) {
+  .instagram-login .quick-start :first-child {
+    width: 150px;
+  }
+}
+.instagram-login .quick-start :nth-child(2) {
+  width: 100px;
+  height: 100px;
+}
+.instagram-login .quick-start .remove-account {
+  color: rgb(239, 68, 68);
+}
+.instagram-login .quick-start .remove-account::after {
+  content: "";
+  display: block;
+  background-color: rgb(239, 68, 68);
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  transition: all 0.4s;
+}
+.instagram-login .quick-start .remove-account:hover::after {
+  width: 100%;
+}
+.instagram-login .quick-start .remove-account:hover {
+  text-decoration: none;
+}
+.instagram-login .accounts {
+  text-align: center;
+  color: rgb(160, 160, 160);
+  padding: 1rem;
+}
+.instagram-login .download-app {
+  text-align: center;
+}
+.instagram-login .download-app p {
+  margin-bottom: 1rem;
+}
+.instagram-login .download-app .stores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.instagram-login .download-app .stores img {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,30 @@
+{
+  "name": "desafio-instagram-dio",
+  "version": "1.0.0",
+  "description": "Recriação da landing page do Instagram",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "sass": "sass --watch src/styles/index.scss:dist/styles/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allbertuu/desafio-instagram-dio.git"
+  },
+  "keywords": [
+    "instagram",
+    "landing-page",
+    "dio"
+  ],
+  "author": "Alberto Vinícius Albuquerque dos Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allbertuu/desafio-instagram-dio/issues"
+  },
+  "homepage": "https://github.com/allbertuu/desafio-instagram-dio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.52.3"
+  }
+}
